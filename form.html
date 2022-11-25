@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text" href="./css/bootstrap.css"></style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Student DataSheet</h1>
+    <div class="formclass">
+        <form id="formid">
+            <h4>Please fill your correct details</h4>
+            <label>First Name : </label>
+            <input type="text" id="fname" placeholder="Enter Your First name" required/>
+            <label>Last Name : </label>
+            <input type="text" id="lname" placeholder="Enter Your Last Name" required/>
+            <label>Email : </label>
+            <input type="email" id="mail" placeholder="Enter your Email-Id" required/>
+            <label>Gender : </label>
+            <input type="radio" id="child" name="age" value="child" />
+            <label for="child">Male</label>
+            <input type="radio" id="adult" name="age" value="adult" />
+            <label for="adult">Female</label>
+            <input type="radio" id="senior" name="age" value="senior" />
+            <label for="senior">Others</label><br /><br />
+            <label>Select Your Branch : </label>
+            <select type="dropdown">
+              <option>Computer Science & Engineering</option>
+              <option>Information Technology</option>
+              <option>Mechanical Engineering</option>
+              <option>Civil Engineering</option>
+            </select>
+            <label>Address line1 : </label>
+            <input type="text" placeholder="Enter your address" required/>
+            <label>Address line2 : </label>
+            <input type="text" placeholder="Enter your address" />
+            <label>Pincode : </label>
+            <input type="pincode" placeholder="Enter PIN code" maxlength="6" required/>
+            <label>Ask Your Query : </label>
+            <textarea name="comment" form="usrform"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+  </body>
+</html>
